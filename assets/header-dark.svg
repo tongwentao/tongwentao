@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="224" viewBox="0 0 960 224" role="img" aria-labelledby="title desc">
+<title id="title">Wentao Tong</title><desc id="desc">Software, AI and open source. A quiet geometric study in blue.</desc>
+<rect width="960" height="224" rx="12" fill="#111923"/>
+<rect x="38" y="43" width="24" height="3" rx="1.5" fill="#8bb7fa"/>
+<text x="76" y="49" fill="#9aabc0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="2">SOFTWARE / AI / OPEN SOURCE</text>
+<text x="38" y="125" fill="#edf2f8" font-family="Georgia, 'Times New Roman', serif" font-size="57" letter-spacing="-1.4">Wentao Tong</text>
+<text x="40" y="171" fill="#9aabc0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17">Practical tools. Thoughtful contributions.</text>
+<g stroke="#26364a" fill="none" stroke-width="1">
+<path d="M752 0v224M808 0v224M864 0v224M920 0v224M704 56h256M704 112h256M704 168h256"/>
+<circle cx="836" cy="112" r="69"/>
+</g>
+<g fill="none" stroke="#8bb7fa" stroke-width="1.5">
+<path d="M775 80V57h23M874 57h23v23M897 144v23h-23M798 167h-23v-23"/>
+<circle cx="836" cy="112" r="28"/>
+<path d="M827 112h18M836 103v18"/>
+</g>
+<circle cx="897" cy="57" r="3" fill="#8bb7fa"/>
+</svg>
