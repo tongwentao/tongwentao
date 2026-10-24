@@ -1,18 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="224" viewBox="0 0 960 224" role="img" aria-labelledby="title desc">
-<title id="title">Wentao Tong</title><desc id="desc">Software, AI and open source. A quiet geometric study in blue.</desc>
-<rect width="960" height="224" rx="12" fill="#111923"/>
-<rect x="38" y="43" width="24" height="3" rx="1.5" fill="#8bb7fa"/>
-<text x="76" y="49" fill="#9aabc0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="2">SOFTWARE / AI / OPEN SOURCE</text>
-<text x="38" y="125" fill="#edf2f8" font-family="Georgia, 'Times New Roman', serif" font-size="57" letter-spacing="-1.4">Wentao Tong</text>
-<text x="40" y="171" fill="#9aabc0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17">Practical tools. Thoughtful contributions.</text>
-<g stroke="#26364a" fill="none" stroke-width="1">
-<path d="M752 0v224M808 0v224M864 0v224M920 0v224M704 56h256M704 112h256M704 168h256"/>
-<circle cx="836" cy="112" r="69"/>
-</g>
-<g fill="none" stroke="#8bb7fa" stroke-width="1.5">
-<path d="M775 80V57h23M874 57h23v23M897 144v23h-23M798 167h-23v-23"/>
-<circle cx="836" cy="112" r="28"/>
-<path d="M827 112h18M836 103v18"/>
-</g>
-<circle cx="897" cy="57" r="3" fill="#8bb7fa"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="288" viewBox="0 0 960 288" role="img" aria-labelledby="title desc">
+  <title id="title">Wentao Tong — Computer vision, Python infrastructure, and local AI</title>
+  <desc id="desc">A geometric viewfinder and connected nodes accompany the name Wentao Tong. Build carefully. Contribute upstream.</desc>
+  <defs>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#1c2b3e" stroke-width="1"/>
+    </pattern>
+    <clipPath id="panel"><rect x="1" y="1" width="958" height="286" rx="15"/></clipPath>
+  </defs>
+  <rect x=".5" y=".5" width="959" height="287" rx="16" fill="#0c1420" stroke="#223044"/>
+  <g clip-path="url(#panel)">
+    <rect x="648" y="0" width="312" height="288" fill="url(#grid)"/>
+    <circle cx="810" cy="143" r="103" fill="none" stroke="#223044"/>
+    <circle cx="810" cy="143" r="77" fill="none" stroke="#223044" stroke-dasharray="2 7"/>
+    <path d="M648 0v288" stroke="#223044"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <circle cx="39" cy="40" r="4" fill="#b6f0cf"/>
+    <text x="53" y="44" font-size="11" font-weight="600" letter-spacing="2.2" fill="#9aaebb">TONGWENTAO / OPEN SOURCE</text>
+    <text x="33" y="128" font-size="62" font-weight="650" letter-spacing="-2.4" fill="#edf4f5">Wentao Tong</text>
+    <text x="37" y="170" font-size="20" fill="#9aaebb">Build carefully. Contribute upstream.</text>
+    <rect x="37" y="215" width="28" height="3" rx="1.5" fill="#b6f0cf"/>
+    <text x="77" y="221" font-size="11" font-weight="600" letter-spacing="1.35" fill="#9aaebb">COMPUTER VISION / PYTHON / LOCAL AI</text>
+    <text x="37" y="261" font-size="10" letter-spacing="1" fill="#9aaebb">HANGZHOU, CN</text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="728" y="70" width="164" height="146" rx="12" fill="#122033" stroke="#223044"/>
+    <path d="M716 95V69h27M877 69h27v26M904 190v27h-27M743 217h-27v-27" stroke="#b6f0cf" stroke-width="2"/>
+    <path d="M756 177h25q12 0 12-12V113q0-12 12-12h32M793 143h48q12 0 12 12v22" stroke="#8cb4ef" stroke-width="2"/>
+    <path d="M769 101v13M762.5 107.5h13" stroke="#9aaebb"/>
+    <circle cx="756" cy="177" r="5" fill="#122033" stroke="#b6f0cf" stroke-width="2"/>
+    <circle cx="793" cy="143" r="5" fill="#b6f0cf" stroke="#b6f0cf" stroke-width="2"/>
+    <circle cx="841" cy="101" r="5" fill="#122033" stroke="#b6f0cf" stroke-width="2"/>
+    <circle cx="853" cy="180" r="5" fill="#122033" stroke="#8cb4ef" stroke-width="2"/>
+  </g>
+  <text x="810" y="259" text-anchor="middle" fill="#9aaebb" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="2">IDEA → PATCH → MERGED</text>
 </svg>
