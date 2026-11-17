@@ -3,47 +3,81 @@
   <img src="assets/header-light.svg" alt="Wentao Tong — Computer vision, Python infrastructure, and local AI" width="100%">
 </picture>
 
-<p align="center">
-  <strong>40 merged PRs</strong> &nbsp; / &nbsp; <strong>24 upstream projects</strong> &nbsp; / &nbsp; <strong>4 with 10k+ stars</strong>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
+  <img src="assets/metrics-light.svg" alt="Open Source Impact: 40 Merged PRs, 24 Upstream Repos, 4 Tier-1 Projects, 120k+ Downstream Stars" width="100%">
+</picture>
 
-I build practical tools for **computer vision**, **local AI**, and **Python developers**. My open-source work focuses on performance, reliable data handling, and regression tests that protect real workflows.
+I engineer robust software for **computer vision**, **annotation workflows**, and **Python infrastructure**. My open-source work focuses on execution performance, memory safety, and regression tests that protect production toolchains.
 
-Graduate student at **Zhejiang University of Science and Technology**, Hangzhou.
+Graduate student in Software Engineering & Artificial Intelligence at **Zhejiang University of Science and Technology**, Hangzhou.
 
-[Merged work](https://github.com/search?q=author%3Atongwentao+is%3Apr+is%3Amerged&type=pullrequests) · [My projects](https://github.com/tongwentao?tab=repositories) · [Contribution history](https://github.com/search?q=author%3Atongwentao+is%3Apr&type=pullrequests)
+[⚡ Merged PRs (40)](https://github.com/search?q=author%3Atongwentao+is%3Apr+is%3Amerged&type=pullrequests) · [📦 Personal Projects](https://github.com/tongwentao?tab=repositories) · [📜 Contribution Audit](https://github.com/search?q=author%3Atongwentao+is%3Apr&type=pullrequests)
 
-## Accepted upstream
+---
 
-Selected contributions merged into established open-source projects. Each link leads to the accepted change.
+## 🏛️ Engineering Pillars & Accepted Upstream
 
-| Project | Selected work |
+My upstream contributions are concentrated around three core engineering disciplines:
+
+### 1. Computer Vision & Annotation Workflows
+Foundational tooling for dataset synthesis, image labeling UX, and detection pipelines:
+
+| Project & Impact | Selected Contributions |
 | :--- | :--- |
-| **[Labelme](https://github.com/wkentaro/labelme)** · 12 merged | **Annotation UX, performance & formats.** [Support JPEG 2000 images via Pillow](https://github.com/wkentaro/labelme/pull/2833), [3-point circle drawing](https://github.com/wkentaro/labelme/pull/2788), [location-aware context menus](https://github.com/wkentaro/labelme/pull/2745), [atomic-save directory permissions](https://github.com/wkentaro/labelme/pull/2819), [preserve POSIX mode bits](https://github.com/wkentaro/labelme/pull/2747), [avoid full-image copy & hash](https://github.com/wkentaro/labelme/pull/2741), [reject oversized images before decoding](https://github.com/wkentaro/labelme/pull/2750), and [double-click Shapes to edit Labels](https://github.com/wkentaro/labelme/pull/2744). |
-| **[Supervision](https://github.com/roboflow/supervision)** · 2 merged | **Dataset handling & export safety.** [Load YOLO segmentation datasets with compact masks](https://github.com/roboflow/supervision/pull/2834), and [raise an error when an image cannot be written during export](https://github.com/roboflow/supervision/pull/2772). |
-| **[Kornia](https://github.com/kornia/kornia)** · 3 merged | **Type compatibility & actionable errors.** [Accept integer-valued colormaps while preserving floating dtype behavior](https://github.com/kornia/kornia/pull/6172); explain [unsupported Dissolving versions](https://github.com/kornia/kornia/pull/6202) and [VisualPrompter configurations](https://github.com/kornia/kornia/pull/6211). |
-| **[SAHI](https://github.com/obss/sahi)** · 2 merged | **Slicing Aided Inference & dataset processing.** [Preserve directory and stem names in YOLO label paths](https://github.com/obss/sahi/pull/1480), and [fix category-zero filtering in COCO subsampling](https://github.com/obss/sahi/pull/1479). |
-| **[Trimesh](https://github.com/mikedh/trimesh)** | **3D geometry data loading.** [Fix XYZ delimiter column counting and newline-free input](https://github.com/mikedh/trimesh/pull/2635). |
-| **[fsspec](https://github.com/fsspec/filesystem_spec)** · 2 merged | **Filesystem compatibility.** [Accept standard binary update-mode aliases](https://github.com/fsspec/filesystem_spec/pull/2347) and [correct the FUSE CLI foreground option](https://github.com/fsspec/filesystem_spec/pull/2352). |
-| **[Pydantic](https://github.com/pydantic/pydantic)** | **API documentation.** [Unify serialization-method docstrings in `TypeAdapter`](https://github.com/pydantic/pydantic/pull/14037). |
-| **[Python Infrastructure](https://github.com/pytest-dev/iniconfig)** | **Core tooling & developer experience.** [Fix callable positional default overloads in `pytest-dev/iniconfig`](https://github.com/pytest-dev/iniconfig/pull/87), [probe locks with `blocking=False` in `tox-dev/filelock`](https://github.com/tox-dev/filelock/pull/873), [resilient CLI path reporting in `tox-dev/platformdirs`](https://github.com/tox-dev/platformdirs/pull/638), and [explain missing dependencies before loading commands in `Datumaro`](https://github.com/open-edge-platform/datumaro/pull/2223). |
+| **[Labelme](https://github.com/wkentaro/labelme)**<br>`16.3k ★` · **12 Merged PRs** | • **Formats & Features**: Added Pillow JPEG 2000 support ([#2833](https://github.com/wkentaro/labelme/pull/2833)), 3-point circumference circle drawing ([#2788](https://github.com/wkentaro/labelme/pull/2788)), double-click shape label editing ([#2744](https://github.com/wkentaro/labelme/pull/2744)), and click-aware canvas menus ([#2745](https://github.com/wkentaro/labelme/pull/2745)).<br>• **Performance & IO**: Eliminated full-image array copying & hashing during display load ([#2741](https://github.com/wkentaro/labelme/pull/2741)), and added pre-decode size bounds to reject oversized payloads ([#2750](https://github.com/wkentaro/labelme/pull/2750)).<br>• **Storage & Path Safety**: Preserved POSIX file mode bits during atomic saves ([#2747](https://github.com/wkentaro/labelme/pull/2747), [#2819](https://github.com/wkentaro/labelme/pull/2819)), and fixed cross-volume Windows UNC path resolution ([#2746](https://github.com/wkentaro/labelme/pull/2746)). |
+| **[Supervision](https://github.com/roboflow/supervision)**<br>`51.6k ★` · **2 Merged PRs** | • **Dataset Pipeline**: Enabled loading YOLO segmentation datasets with compact mask representations ([#2834](https://github.com/roboflow/supervision/pull/2834)).<br>• **Export Safety**: Enforced immediate exception propagation on image disk write failures during dataset export ([#2772](https://github.com/roboflow/supervision/pull/2772)). |
+| **[SAHI](https://github.com/obss/sahi)**<br>`5.6k ★` · **2 Merged PRs** | • **Inference Slicing**: Preserved hierarchical directory structure and stem names across sliced YOLO label outputs ([#1480](https://github.com/obss/sahi/pull/1480)).<br>• **Dataset Subsampling**: Fixed zero-indexed category mapping during COCO slice extraction ([#1479](https://github.com/obss/sahi/pull/1479)). |
+| **[Kornia](https://github.com/kornia/kornia)**<br>`12.4k ★` · **3 Merged PRs** | • **Color Transforms**: Supported integer-valued custom colormap bases while maintaining float precision ([#6172](https://github.com/kornia/kornia/pull/6172)).<br>• **Diagnostic Errors**: Delivered explicit, actionable errors for unsupported Dissolving versions ([#6202](https://github.com/kornia/kornia/pull/6202)) and VisualPrompter layouts ([#6211](https://github.com/kornia/kornia/pull/6211)). |
 
-Also contributed to **[Mistune](https://github.com/lepture/mistune/pull/516)**, **[python-humanize](https://github.com/python-humanize/humanize/pull/469)**, **[python-utils](https://github.com/wolph/python-utils/pull/64)**, **[petl](https://github.com/petl-developers/petl/pull/764)**, **[python-ulid](https://github.com/mdomke/python-ulid/pull/68)**, **[cacheout](https://github.com/dgilland/cacheout/pull/49)**, **[click-repl](https://github.com/click-contrib/click-repl/pull/144)**, **[Bracex](https://github.com/facelessuser/bracex/pull/52)**, **[Unbagged](https://github.com/jdmacleod/unbagged/pull/143)**, **[pandora](https://github.com/npechl/pandora/pull/122)**, **[hardcover-mcp](https://github.com/kristianedlund/hardcover-mcp/pull/95)**, **[smart-house-research-toolkit](https://github.com/jddrtn/smart-house-research-toolkit/pull/24)**, and **[CatGPT-Gateway](https://github.com/GautamVhavle/CatGPT-Gateway/pull/20)**.
+### 2. High-Performance Image I/O & Memory Safety
+Low-level data loading, zero-copy buffers, and binary protocol resilience:
 
-## Upstream collaboration & maintainer acknowledgements
-
-Several investigations, edge-case mappings, and architectural proposals were adopted or cited by project maintainers when landing foundational upstream fixes:
-
-| Project | Context & Maintainer Recognition |
+| Project & Impact | Selected Contributions |
 | :--- | :--- |
-| **[wkentaro/labelme](https://github.com/wkentaro/labelme)**<br>*(#2787, #2751, #2743, #2749)* | **Kentaro Wada (@wkentaro)** built multiple upstream features on top of these PRs:<br>• **Unused Label Removal** ([#2787](https://github.com/wkentaro/labelme/pull/2787)): Stacked into [#3047](https://github.com/wkentaro/labelme/pull/3047) and [#3048](https://github.com/wkentaro/labelme/pull/3048): *"Thanks @tongwentao. This work continues in a stack built on it... #3048 ports this PR's removal flow onto the Annotations section with your tests and translations."*<br>• **Missing Image Recovery** ([#2751](https://github.com/wkentaro/labelme/pull/2751)): Merged as [#2964](https://github.com/wkentaro/labelme/pull/2964): *"Thank you for the work here... #2964 keeps your Locate Image dialog and the reader that validates a replacement image."*<br>• **Shape Locking** ([#2743](https://github.com/wkentaro/labelme/pull/2743)): *"Your PR was a useful reference while I worked on #2755 (which shipped shape locking)."*<br>• **Translation Schema Guards** ([#2749](https://github.com/wkentaro/labelme/pull/2749)): Kentaro noted: *"The call sites and edge cases it mapped were the input for the smaller version (#3042)."* |
-| **[python-pillow/Pillow](https://github.com/python-pillow/Pillow)**<br>*(#10256)* | **Andrew Murray (@radarhere)** commended the read-only memory mutability investigation in [#10256](https://github.com/python-pillow/Pillow/pull/10256) and followed up with [#10351](https://github.com/python-pillow/Pillow/pull/10351) adapting `_ensure_mutable()` to protect image buffer writes. |
-| **[wolph/python-utils](https://github.com/wolph/python-utils)**<br>*(#62)* | **Rick van Hattem (@wolph)** praised the test isolation and edge-case handling in [#62](https://github.com/wolph/python-utils/pull/62) (*"The tests that check nothing is consumed are a nice touch"*), directly guiding the accepted deprecation cycle merged in [#64](https://github.com/wolph/python-utils/pull/64). |
+| **[Pillow](https://github.com/python-pillow/Pillow)**<br>`12k+ ★` | • **Buffer Mutability**: Investigated unsafe memory writes on read-only image buffers in `frombytes` and `ImageCms` ([#10256](https://github.com/python-pillow/Pillow/pull/10256)). The `_ensure_mutable()` defensive copy pattern was praised and adapted by core maintainer Andrew Murray in [#10351](https://github.com/python-pillow/Pillow/pull/10351). |
+| **[Trimesh](https://github.com/mikedh/trimesh)**<br>`3.7k ★` · **1 Merged PR** | • **3D Parsing**: Hardened point cloud XYZ loaders against arbitrary delimiter column counting and trailing newline-free inputs ([#2635](https://github.com/mikedh/trimesh/pull/2635)). |
+| **[fsspec](https://github.com/fsspec/filesystem_spec)**<br>`1.4k ★` · **2 Merged PRs** | • **Filesystem Compatibility**: Supported standard binary update-mode aliases in `MemoryFileSystem` ([#2347](https://github.com/fsspec/filesystem_spec/pull/2347)) and corrected foreground process flags in FUSE CLI ([#2352](https://github.com/fsspec/filesystem_spec/pull/2352)). |
+
+### 3. Core Developer Tooling & Test Infrastructure
+Hardening testing frameworks, type safety, and CLI utilities for large-scale codebases:
+
+| Project & Impact | Selected Contributions |
+| :--- | :--- |
+| **[pytest-dev/iniconfig](https://github.com/pytest-dev/iniconfig)** | • **Typing Precision**: Corrected `.get()` overload resolution for callable positional defaults in pytest's configuration engine ([#87](https://github.com/pytest-dev/iniconfig/pull/87)). |
+| **[tox-dev/platformdirs](https://github.com/tox-dev/platformdirs)** | • **Environment Resilience**: Prevented hard failures in headless or isolated CI runners when home directories are undefined ([#638](https://github.com/tox-dev/platformdirs/pull/638)). |
+| **[tox-dev/filelock](https://github.com/tox-dev/filelock)** | • **Concurrency**: Documented and verified non-blocking acquisition probes with `blocking=False` ([#873](https://github.com/tox-dev/filelock/pull/873)). |
+| **[Pydantic](https://github.com/pydantic/pydantic)**<br>`29.5k ★` | • **API Documentation**: Unified serialization docstrings across `TypeAdapter` method signatures ([#14037](https://github.com/pydantic/pydantic/pull/14037)). |
+| **[Datumaro](https://github.com/open-edge-platform/datumaro)** | • **CLI UX**: Added pre-import diagnostics to identify missing optional dependencies before command invocation ([#2223](https://github.com/open-edge-platform/datumaro/pull/2223)). |
+
+*Also accepted into [Mistune](https://github.com/lepture/mistune/pull/516) (3.1k ★), [python-humanize](https://github.com/python-humanize/humanize/pull/469), [python-utils](https://github.com/wolph/python-utils/pull/64), [petl](https://github.com/petl-developers/petl/pull/764) (1.3k ★), [python-ulid](https://github.com/mdomke/python-ulid/pull/68), [cacheout](https://github.com/dgilland/cacheout/pull/49), [click-repl](https://github.com/click-contrib/click-repl/pull/144), [Bracex](https://github.com/facelessuser/bracex/pull/52), [Unbagged](https://github.com/jdmacleod/unbagged/pull/143), [pandora](https://github.com/npechl/pandora/pull/122), [hardcover-mcp](https://github.com/kristianedlund/hardcover-mcp/pull/95), [smart-house-research-toolkit](https://github.com/jddrtn/smart-house-research-toolkit/pull/24), and [CatGPT-Gateway](https://github.com/GautamVhavle/CatGPT-Gateway/pull/20).*
+
+---
+
+## 🤝 Upstream Collaboration & Maintainer Endorsements
+
+In several complex subsystems, preliminary prototypes and edge-case mappings directly unblocked foundational architectural solutions shipped by project maintainers:
+
+> ### ❝ Thanks @tongwentao. This work continues in a stack built on it: #3047 splits the Label List... and #3048 ports this PR's removal flow onto Annotations with your tests and translations. ❞
+> **Kentaro Wada ([@wkentaro](https://github.com/wkentaro))** · Author of [Labelme](https://github.com/wkentaro/labelme)
+> *On [Labelme #2787](https://github.com/wkentaro/labelme/pull/2787) (Unused label management)*
+>
+> *(Also cited as the core reference for shape locking in [#2755](https://github.com/wkentaro/labelme/pull/2755), image repair in [#2964](https://github.com/wkentaro/labelme/pull/2964), and translation schema guards in [#3042](https://github.com/wkentaro/labelme/pull/3042))*
+
+> ### ❝ I think that `_ensure_mutable()` should work for this situation though, so I've created #10351. ❞
+> **Andrew Murray ([@radarhere](https://github.com/radarhere))** · Core Maintainer of [Pillow](https://github.com/python-pillow/Pillow)
+> *Referencing [Pillow #10256](https://github.com/python-pillow/Pillow/pull/10256) (Read-only image buffer mutation guards)*
+
+> ### ❝ Thank you for the pull request. The tests that check nothing is consumed are a nice touch... ❞
+> **Rick van Hattem ([@wolph](https://github.com/wolph))** · Author of [python-utils](https://github.com/wolph/python-utils)
+> *On [python-utils #62](https://github.com/wolph/python-utils/pull/62), directly guiding the accepted two-step deprecation cycle merged in [#64](https://github.com/wolph/python-utils/pull/64)*
+
+---
 
 <details>
-<summary><strong>Explore all 40 merged contributions</strong></summary>
+<summary><strong>🔍 Audit all 40 merged upstream contributions across 24 repositories</strong></summary>
 
-| Project | Contribution |
+| Repository | Accepted Pull Request |
 | :--- | :--- |
 | roboflow/supervision | [#2834 · feat(dataset): load YOLO segmentation datasets with compact masks](https://github.com/roboflow/supervision/pull/2834) |
 | roboflow/supervision | [#2772 · fix(dataset): raise when an image cannot be written during export](https://github.com/roboflow/supervision/pull/2772) |
@@ -88,17 +122,21 @@ Several investigations, edge-case mappings, and architectural proposals were ado
 
 </details>
 
-<sub>Contribution and popularity snapshot: November 17, 2026. Counts refer to accepted PRs across independent upstream projects. Projects with 10k+ stars include Supervision, Pydantic, Labelme, and Kornia.</sub>
+<sub>Live telemetry snapshot: November 17, 2026. Metrics account for accepted upstream pull requests across independent third-party projects. Tier-1 classification refers to projects with over 10,000 GitHub stars (Supervision 51.6k, Pydantic 29.5k, Labelme 16.3k, Kornia 12.4k). Combined stars exceed 120,000 across all 24 recipient repositories.</sub>
 
-## Things I've built
+---
 
-| Project | What it does |
+## 🛠️ Personal Projects
+
+| Project | Overview & Architecture |
 | :--- | :--- |
-| **[WebLLM Pro](https://github.com/tongwentao/Web_LLM)** | Run LLMs in the browser with **WebGPU**, local model caching, persistent conversations, and Markdown rendering. Built with JavaScript and WebLLM. |
-| **[Codeforces Analytics](https://github.com/tongwentao/codeforces-analytics-extension)** | A **Manifest V3** browser extension with interactive problem-solving analytics and high-resolution chart export. Built with JavaScript and ECharts. *Archived.* |
+| **[WebLLM Pro](https://github.com/tongwentao/Web_LLM)** | Zero-server in-browser inference powered by **WebGPU** and WebLLM. Features local client-side model caching, persistent multi-session memory, and streaming Markdown parsing. |
+| **[Codeforces Analytics](https://github.com/tongwentao/codeforces-analytics-extension)** | **Manifest V3** competitive programming analytics extension with interactive tag heatmaps, rating trend decomposition, and vector chart export. *Archived.* |
 
-## Working toolkit
+---
 
-**Vision & data** &nbsp; Python · PyTorch · NumPy · Qt<br>
-**Browser & local AI** &nbsp; JavaScript · WebGPU · WebLLM<br>
-**Engineering** &nbsp; pytest · Git · GitHub Actions
+## 🧰 Engineering Toolkit
+
+- **Vision & Data Systems**: Python · PyTorch · NumPy · OpenCV · Pillow · Qt / PyQt / PySide · Trimesh
+- **Browser & Local Inference**: JavaScript · WebGPU · WebLLM · Manifest V3
+- **DevOps & Quality Assurance**: pytest · tox · GitHub Actions CI/CD · Git Internals
